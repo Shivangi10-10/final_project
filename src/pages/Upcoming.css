@@ -1,0 +1,157 @@
+.upcoming-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.controls input, .controls select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.controls input {
+    flex: 2;
+}
+
+.controls select {
+    flex: 1;
+}
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.booking-table th, .booking-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.booking-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.booking-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.booking-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.booking-table button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+}
+
+.booking-table .accept {
+    background: #4CAF50;
+    color: white;
+}
+
+.booking-table .reject {
+    background: #f44336;
+    color: white;
+}
+
+.booking-table button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.remark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remark-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+
+.remark-box textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.remark-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.remark-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remark-actions button:first-child {
+    background: #4CAF50;
+    color: white;
+}
+
+.remark-actions button:last-child {
+    background: #f44336;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+    
+    .booking-table {
+        font-size: 14px;
+    }
+    
+    .booking-table th, .booking-table td {
+        padding: 8px;
+    }
+}
+
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .copyright p {
+    font-size: 12px;
+    color: #888888;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  

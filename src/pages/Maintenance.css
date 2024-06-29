@@ -1,0 +1,131 @@
+.maintenance-container {
+    padding: 20px;
+    width: 700px;
+    margin: 0 auto; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.maintenance-form {
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #002d72;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.maintenance-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.maintenance-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.maintenance-card p {
+    margin: 5px 0;
+}
+
+.confirm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.confirm-dialog p {
+    margin-bottom: 20px;
+}
+
+.confirm-dialog-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirm-yes {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-yes:hover {
+    background: #218838;
+}
+
+.confirm-no {
+    background: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-no:hover {
+    background: #5a6268;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .copyright p {
+    font-size: 12px;
+    color: #888888;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  

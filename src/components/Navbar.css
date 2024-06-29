@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-title {
+    font-size: 20px;
+    color: #002d72;
+    font-weight: bold;
+}
+
+.navbar-subtitle {
+    font-size: 12px;
+    color: #002d72;
+    font-style: italic;
+}
+
+.heading {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+    color: #002d72;
+}
+
+.navbar-user {
+    position: relative;
+}
+
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #002d72;
+}
+
+.user-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-menu.active {
+    display: flex;
+}
+
+.username {
+    font-size: 14px;
+    color: #002d72;
+    margin-bottom: 10px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #002d72;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.logout-icon {
+    margin-right: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .navbar-brand {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .navbar-user {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar-logo {
+        height: 30px;
+    }
+
+    .navbar-title {
+        font-size: 18px;
+    }
+
+    .navbar-subtitle {
+        font-size: 10px;
+    }
+
+    .user-menu {
+        top: 50px;
+        right: 10px;
+        width: 150px;
+    }
+}

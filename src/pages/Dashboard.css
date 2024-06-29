@@ -1,0 +1,122 @@
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .stat-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: 15%;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .new-bookings {
+    color: #ff6b6b;
+  }
+  
+  .ongoing-bookings {
+    color: #ffa500;
+  }
+  
+  .stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .timeline-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-controls button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #002d72;
+  }
+  
+  .timeline-controls button.active {
+    background-color: orange;
+    color: #fff;
+  }
+  
+  .timeline-content {
+    display: flex;
+  }
+  
+  .timeline-labels {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .timeline-labels div {
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 5px;
+  }
+  
+  .timeline-grid {
+    flex: 1;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .no-data {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .room-usage-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

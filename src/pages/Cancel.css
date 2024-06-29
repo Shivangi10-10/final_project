@@ -1,0 +1,229 @@
+.cancel-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #f4f4f4;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+.table .actions {
+    display: flex;
+    justify-content: center;
+}
+
+.table .actions .cancel-icon {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.table .actions .cancel-icon:hover {
+    color: darkred;
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dialog h3 {
+    margin: 0;
+}
+
+.dialog .dialog-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.dialog .dialog-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dialog .dialog-actions .cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.dialog .dialog-actions .cancel-button:hover {
+    background-color: #c62828;
+}
+
+.dialog .dialog-actions .close-button {
+    background-color: #ccc;
+    color: white;
+}
+
+.dialog .dialog-actions .close-button:hover {
+    background-color: #999;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .controls {
+        flex-direction: row;
+    }
+
+    .controls input {
+        flex: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    .table th, .table td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        border: none;
+        position: relative;
+    }
+
+    .table th::before, .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .table th, .table td {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* Additional styles for responsiveness and adjusting table position */
+.main-content {
+  margin-left: 250px; /* Adjust this value if necessary to match the sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+/* Adjusting the table for responsiveness */
+.table-container {
+  margin-top: 20px; /* Add some space between the sidebar and the table */
+  overflow-x: auto;
+  padding: 0 20px; /* Add padding to avoid overlap with the sidebar */
+}
+
+@media (max-width: 600px) {
+  .table th, .table td {
+    padding: 10px;
+  }
+
+  .table th, .table td {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    position: relative;
+  }
+
+  .table th::before, .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .table th, .table td {
+    border-bottom: 1px solid #ddd;
+  }
+}
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .copyright p {
+    font-size: 12px;
+    color: #888888;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }

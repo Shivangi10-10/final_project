@@ -1,0 +1,22 @@
+.ongoing-container {
+    padding: 20px;
+}
+
+.booking-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.booking-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.booking-card p {
+    margin: 5px 0;
+}

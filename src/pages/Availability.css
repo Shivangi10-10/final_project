@@ -1,0 +1,155 @@
+.availability-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: 100px repeat(19, 1fr);
+    border: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.timeline-header {
+    display: contents;
+}
+
+.room-label, .hour-label {
+    background-color: #f0f0f0;
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.room-timeline {
+    display: contents;
+}
+
+.timeline-slot {
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.availability-container {
+    padding: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.room-label {
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hour-label {
+    width: 50px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.room-timeline {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.timeline-slot {
+    width: 50px;
+    height: 30px;
+    border-right: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    color: white;
+}
+.availability-container {
+    position: relative;
+  }
+  
+  .booking-tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    pointer-events: none;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .room-label {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .hour-label {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .room-timeline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .timeline-slot {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .timeline {
+        grid-template-columns: 80px repeat(19, 80px);
+    }
+}
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
