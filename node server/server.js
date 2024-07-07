@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 // MongoDB connection
-const mongoURI = 'mongodb+srv://suyashshi2011:HOC5by9lJMYM8mF9@cluster0.2zzmucg.mongodb.net/form?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = '<your link>';
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
