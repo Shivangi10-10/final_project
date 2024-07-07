@@ -33,8 +33,8 @@ Experience seamless conference room management with our MERN stack-based system,
    
 ### Tech Stack and Software Used
 
-**Frontend**: React.js
-**Backend**: Node.js
+**Frontend**: React.js<br>
+**Backend**: Node.js<br>
 **Database**: MongoDB Atlas  
 **IDE**: Visual Studio Code  
 **Version Control**: Git  
