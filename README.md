@@ -5,9 +5,7 @@
 ### Overview:
 **BookSmart - Revolutionizing Your Workspace Reservations**
 
-Experience seamless conference room management with our MERN stack-based system, featuring real-time booking trends via Chart.js and instant notifications through email.js. 
-<br> Admins enjoy robust control with automated booking acceptance, maintenance logs, and comprehensive room management, while users effortlessly check availability, book, and 
-<br> cancel rooms. Elevate your workspace efficiency with BookSmart.
+Experience seamless conference room management with our MERN stack-based system, featuring real-time booking trends via Chart.js and instant notifications through email.js. Admins enjoy robust control with automated booking acceptance, maintenance logs, and comprehensive room management, while users effortlessly check availability, book, and cancel rooms. Elevate your workspace efficiency with BookSmart.
 
 
 ### Features:
@@ -48,3 +46,48 @@ Experience seamless conference room management with our MERN stack-based system,
 
 **A deployed version can be checked here: [final-project-seven-orcin.vercel.app](https://final-project-seven-orcin.vercel.app/)**
 
+### Installation/Environment Setup
+
+1. **Clone this repository in your local system.**
+   Open terminal in a new folder and enter the command given below.
+   ```sh
+   git clone https://github.com/Shivangi10-10/final_project.git
+   ```
+
+2. **Make sure that Node is installed and updated in your machine.**
+
+3. **Install dependencies.**
+   Open terminal in the cloned folder and enter the commands given below.
+   ```sh
+   npm install
+   cd "node server"
+   npm install
+   cd ..
+   ```
+
+4. **Run the project.**
+   Inside the cloned folder, write the following command in terminal to run the application locally.
+   ```sh
+   cd "node server"
+   nodemon server.js
+   New terminal - npm start
+   ```
+### Future Scope
+
+**AI Integration: Automode Booking**  
+Incorporate AI for automating room bookings when slots are available, notifying admins instantly.
+
+**Enhanced User Analytics**  
+Implement advanced analytics for user behavior and booking patterns.
+
+**Voice Recognition**  
+Introduce voice commands for seamless booking and room status updates.
+
+**IoT Integration**  
+Connect IoT sensors for real-time occupancy tracking and automated maintenance alerts.
+
+**Mobile App Development**  
+Develop dedicated mobile apps for iOS and Android platforms.
+
+**Augmented Reality (AR) Navigation**  
+Integrate AR for easier navigation to conference rooms.
