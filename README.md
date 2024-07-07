@@ -91,3 +91,8 @@ Develop dedicated mobile apps for iOS and Android platforms.
 
 **Augmented Reality (AR) Navigation**  
 Integrate AR for easier navigation to conference rooms.
+
+Certainly! Here's how you can format it:
+
+**Documentation**  
+A complete project report for the system with use case diagram, web flow, relational diagram, etc can be found [here](https://github.com/Shivangi10-10/final_project/blob/main/iocl.pdf) (**BookSmart | Project Report**).
